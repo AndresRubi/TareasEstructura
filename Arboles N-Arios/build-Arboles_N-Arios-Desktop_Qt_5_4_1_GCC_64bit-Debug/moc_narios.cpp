@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mainwindow.h'
+** Meta object code from reading C++ file 'narios.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.4.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../Arboles_N-Arios/mainwindow.h"
+#include "../Arboles_N-Arios/narios.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mainwindow.h' doesn't include <QObject>."
+#error "The header file 'narios.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.4.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,33 +18,35 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_MainWindow_t {
+struct qt_meta_stringdata_NArios_t {
     QByteArrayData data[7];
-    char stringdata[126];
+    char stringdata[152];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_NArios_t, stringdata) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
+static const qt_meta_stringdata_NArios_t qt_meta_stringdata_NArios = {
     {
-QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 22), // "on_pushAgregar_clicked"
-QT_MOC_LITERAL(2, 34, 0), // ""
-QT_MOC_LITERAL(3, 35, 21), // "on_pushBuscar_clicked"
-QT_MOC_LITERAL(4, 57, 23), // "on_pushEliminar_clicked"
-QT_MOC_LITERAL(5, 81, 20), // "on_pushSumar_clicked"
-QT_MOC_LITERAL(6, 102, 23) // "on_pushImprimir_clicked"
+QT_MOC_LITERAL(0, 0, 6), // "NArios"
+QT_MOC_LITERAL(1, 7, 28), // "on_pushButtonAgregar_clicked"
+QT_MOC_LITERAL(2, 36, 0), // ""
+QT_MOC_LITERAL(3, 37, 29), // "on_pushButtonEliminar_clicked"
+QT_MOC_LITERAL(4, 67, 27), // "on_pushButtonBuscar_clicked"
+QT_MOC_LITERAL(5, 95, 26), // "on_pushButtonSumar_clicked"
+QT_MOC_LITERAL(6, 122, 29) // "on_pushButtonImprimir_clicked"
 
     },
-    "MainWindow\0on_pushAgregar_clicked\0\0"
-    "on_pushBuscar_clicked\0on_pushEliminar_clicked\0"
-    "on_pushSumar_clicked\0on_pushImprimir_clicked"
+    "NArios\0on_pushButtonAgregar_clicked\0"
+    "\0on_pushButtonEliminar_clicked\0"
+    "on_pushButtonBuscar_clicked\0"
+    "on_pushButtonSumar_clicked\0"
+    "on_pushButtonImprimir_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MainWindow[] = {
+static const uint qt_meta_data_NArios[] = {
 
  // content:
        7,       // revision
@@ -74,44 +76,44 @@ static const uint qt_meta_data_MainWindow[] = {
        0        // eod
 };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void NArios::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MainWindow *_t = static_cast<MainWindow *>(_o);
+        NArios *_t = static_cast<NArios *>(_o);
         switch (_id) {
-        case 0: _t->on_pushAgregar_clicked(); break;
-        case 1: _t->on_pushBuscar_clicked(); break;
-        case 2: _t->on_pushEliminar_clicked(); break;
-        case 3: _t->on_pushSumar_clicked(); break;
-        case 4: _t->on_pushImprimir_clicked(); break;
+        case 0: _t->on_pushButtonAgregar_clicked(); break;
+        case 1: _t->on_pushButtonEliminar_clicked(); break;
+        case 2: _t->on_pushButtonBuscar_clicked(); break;
+        case 3: _t->on_pushButtonSumar_clicked(); break;
+        case 4: _t->on_pushButtonImprimir_clicked(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-const QMetaObject MainWindow::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow.data,
-      qt_meta_data_MainWindow,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject NArios::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_NArios.data,
+      qt_meta_data_NArios,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *NArios::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *NArios::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata))
-        return static_cast<void*>(const_cast< MainWindow*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_NArios.stringdata))
+        return static_cast<void*>(const_cast< NArios*>(this));
+    return QWidget::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int NArios::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

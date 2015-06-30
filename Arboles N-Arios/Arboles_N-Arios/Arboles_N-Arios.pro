@@ -14,9 +14,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    n_arios.cpp
+    narios.cpp
 
 HEADERS  += mainwindow.h \
-    n_arios.h
+    narios.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    narios.ui

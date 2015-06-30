@@ -5,10 +5,40 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_pushAgregar_clicked()
+{
+
+
+}
+
+void MainWindow::on_pushBuscar_clicked()
+{
+
+
+}
+
+
+void MainWindow::on_pushEliminar_clicked()
+{
+
+}
+
+
+void MainWindow::on_pushSumar_clicked()
+{
+
+
+}
+
+void MainWindow::on_pushImprimir_clicked()
+{
+
 }

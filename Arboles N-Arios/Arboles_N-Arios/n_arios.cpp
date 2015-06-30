@@ -10,6 +10,7 @@ void N_Arios::imprimir(Nodo* raiz)
 
     if(raiz!=NULL)
     {
+        print=raiz->valor;
         cout<<raiz->valor<<endl;
         for(int i=0;i<raiz->hijos.size();i++)
         {
@@ -58,7 +59,7 @@ Nodo* N_Arios::buscar(Nodo* raiz, int num)
 
 void N_Arios::Agregar(Nodo *raiz,int num)
 {
-    if(raiz!=NULL) raiz=new Nodo(num);
+    if(raiz==NULL) raiz=new Nodo(num);
     else raiz->hijos.push_back(new Nodo(num));
 }
 
