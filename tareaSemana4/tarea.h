@@ -11,7 +11,7 @@ public:
     Nodo(int valor)
     {
         this->valor=valor;
-        sig=Null;
+        sig=NULL;
     }
 };
 

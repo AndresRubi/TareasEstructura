@@ -3,6 +3,10 @@
 Tarea::Tarea()
 {
 
+    conjunto=NULL;
+    nodA=NULL;
+    nodB=NULL;
+
 }
 
 void Tarea::Insertar(int val)
@@ -12,7 +16,7 @@ void Tarea::Insertar(int val)
         conjunto=new Nodo(val);
         return;
     }
-    Nodo *actual=incio;
+    Nodo *actual=conjunto;
     while(true)
     {
         if(actual->sig->valor > val || !actual->sig)
@@ -69,6 +73,7 @@ void Tarea::Diferencia()
             conjunto=conjunto->sig;
         }
     }
+
 }
 
 void Tarea::Interseccion()
@@ -92,3 +97,6 @@ void Tarea::Interseccion()
         }
     }
 }
+
+
+

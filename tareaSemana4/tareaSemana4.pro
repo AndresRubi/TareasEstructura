@@ -4,19 +4,24 @@
 #
 #-------------------------------------------------
 
-QT       += core
+QT       += core gui
 
-QT       -= gui
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = tareaSemana4
-CONFIG   += console
-CONFIG   -= app_bundle
+
+
 
 TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    tarea.cpp
+    tarea.cpp \
+    form.cpp
 
 HEADERS += \
-    tarea.h
+    tarea.h \
+    form.h
+
+FORMS += \
+    form.ui
